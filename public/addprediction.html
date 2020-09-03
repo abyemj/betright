@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<meta charset ="UTF-8" />
+<meta name ="viewport" content = "width=device-width, initial-scale=1.0" />
+<meta http-equiv ="X-UA-Compatible" content="ie=edge" />
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<title>bet-right</title>
+</head>
+<body>
+    
+<div class = "">
+    <a data-toggle="modal" href="#addPrediction" class ="tips"> UPDATE ROLLOVER</a>
+    <a data-toggle="modal" href="#addPrediction" class ="tips"> UPDATE 2 ODDS</a>
+    <a data-toggle="modal" href="#addPrediction" class ="tips">UPDATE 3 ODDS</a>
+    <a data-toggle="modal" href="#addPrediction" class ="tips">UPDATE 5 ODDS</a>
+    
+</div>
+
+<div class="modal fade" id="addPrediction" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h3>UPDATE</h3>
+          
+          <hr>
+          <div class="modal-body" style="padding:40px 50px;">
+            <form role="form">
+              <div class="form-group">
+                <label for="usrname">FIXTURE</label>
+                <input type="text" class="form-control" id="addfixture" placeholder="Enter Fixture">
+              </div>
+              <div class="form-group">
+                <label for="psw">PREDICTION</label>
+                <input type="text" class="form-control" id="addprediction" placeholder="Enter Prediction">
+              </div>
+              <label for="psw">ODDS</label>
+              <input type="text" class="form-control" id="addodds" placeholder="Enter Odds">
+            </div>
+              <button type="submit" onclick="update()" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> SUBMIT</button>
+            </form>
+          </div>
+          <div class="clearfix">
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          
+          </div>
+        </div>
+          </div>
+
+              
+      <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+
+
+  
+    <script>
+      // TODO: Replace the following with your app's Firebase project configuration
+  var firebaseConfig = {
+  apiKey: "AIzaSyDR4Sj0syPf0U8PJ-1-lsNYYNfPEiZUmSg",
+  authDomain: "betright-8a450.firebaseapp.com",
+  databaseURL: "https://betright-8a450.firebaseio.com",
+  projectId: "betright-8a450",
+  storageBucket: "betright-8a450.appspot.com",
+  messagingSenderId: "439834070769",
+  appId: "1:439834070769:web:4adbd0d42295d9f0e3e350",
+  measurementId: "G-JDKRFZ37X7"
+};
+  
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+     
+
+
+    </script>
+    <script src="auth.js"></script>
+</body>
+</html>

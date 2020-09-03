@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<meta charset ="UTF-8" />
+<meta name ="viewport" content = "width=device-width, initial-scale=1.0" />
+<meta http-equiv ="X-UA-Compatible" content="ie=edge" />
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="pricing.css">
+<link rel='icon' href='football.png' type="image/png" >
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+<title>bet-right</title>
+
+</head>
+<body>
+  <div class ="bs-main">
+    <nav class="navbar navbar-expand-md navbar-dark" style ="background-color:black;">
+    <a href="index.html" class="navbar-brand">
+      <img class = "logo" src="newlogo4.jpeg">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <ul class="nav nav-pills">
+    <li class="nav-item"><a class="nav-link" href="index.html" class="nav-item nav-link active">HOME</a></li>
+    <li class="nav-item"><a class="nav-link" href="pricing.html" class="nav-item nav-link">PRICING</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="contact.html" class="nav-item nav-link">CONTACT</a> </li>
+      <li class="nav-item"> <a  class="nav-link" href="about us.html" class="nav-item nav-link">ABOUT</a> </li>
+  </ul> 
+    <div class="navbar-nav ml-auto navbar-right">
+      <ul class="nav navbar-nav navbar-right">
+        <li><button id ="signup" type="button" style ="display:none" class = "loggedout btn btn-default btn-md btn-outline-warning" ><span class="glyphicon glyphicon-user" ></span> SIGN UP</button></li>
+        <li><button id ="login"  type="button" style ="display:none" class = "loggedout btn btn-default btn-md btn-warning" ><span class="glyphicon glyphicon-log-in" ></span> LOGIN</button></li>
+        <li><button id ="signout" type="button" style ="display:none" class = "loggedin btn btn-default btn-md btn-danger"  onclick= "logout()"><span class="glyphicon glyphicon-log-out"></span> LOGOUT</button></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+  
+</div>
+
+
+
+<div class="snip1214">
+  <div class="plan">
+    <h3 class="plan-title">
+      LOW ODDS PLAN
+    </h3>
+    <div class="plan-cost"><span class="plan-price">N1,500</span><span class="plan-type">/ 14 days</span></div>
+    <ul class="plan-features">
+      <li><i class="ion-checkmark"> </i>Access to previous tips</li>
+      <li><i class="ion-checkmark"> </i>Daily 2 odds (up to 91% accuracy)</li>
+      <li><i class="ion-checkmark"> </i>Daily 3 odds (up to 89% accuracy)</li>
+      <li><i class="ion-checkmark"> </i>Bet-right tips</li>
+      <li><i class="ion-checkmark"> </i>24/7 customer Support</li>
+      <li><i class="ion-checkmark"> </i>Low odd Betting plans and Strategies</li>
+    </ul>
+    <div class="plan-select"><button type ="button" class="select-plan">Select Plan</button></div>
+  </div>
+  <div class="plan">
+    <h3 class="plan-title">
+      LOW ODDS + ROLLOVER
+    </h3>
+    <div class="plan-cost"><span class="plan-price">N2,500</span><span class="plan-type">/ 14 days</span></div>
+    <ul class="plan-features">
+      <li><i class="ion-checkmark"> </i>Access to previous tips</li>
+      <li><i class="ion-checkmark"> </i>Daily 2 odds (up to 91% accuracy</li>
+      <li><i class="ion-checkmark"> </i>Daily 3 odds (up to 89% accuracy)</li>
+      <li><i class="ion-checkmark"> </i>Daily Rollover (up to 99% accuracy)</li>
+      <li><i class="ion-checkmark"> </i>24/7 Customer Support</li>
+      <li><i class="ion-checkmark"> </i>Rollover Betting plans and Strategies</li>
+    </ul>
+    <div class="plan-select"><button type ="button" class="select-plan">Select Plan</button></div>
+  </div>
+  <div class="plan featured">
+    <h3 class="plan-title">
+      HIGH ODDS
+    </h3>
+    <div class="plan-cost"><span class="plan-price">N5,000</span><span class="plan-type">/ 14 days</span></div>
+    <ul class="plan-features">
+        <li><i class="ion-checkmark"> </i>Access to previous tips</li>
+        <li><i class="ion-checkmark"> </i>Daily 5 odds (up to 87% accuracy</li>
+        <li><i class="ion-checkmark"> </i>Daily 25 odds (up to 81% accuracy)</li>
+        <li><i class="ion-checkmark"> </i>50 odds (up to 79% accuracy)</li>
+        <li><i class="ion-checkmark"> </i>24/7 Customer Support</li>
+        <li><i class="ion-checkmark"> </i>High odds Betting plans and Strategies</li>
+    </ul>
+    <div class="plan-select"><button type ="button" class="select-plan">Select Plan</button></div>
+  </div>
+  <div class="plan">
+    <h3 class="plan-title">
+      FULL PLAN
+    </h3>
+    <div class="plan-cost"><span class="plan-price">N10,000</span><span class="plan-type">/ 14 days</span></div>
+    <ul class="plan-features">
+        <li><i class="ion-checkmark"> </i>Access to previous tips</li>
+        <li><i class="ion-checkmark"> </i>2 to 50+ odds (up to 99% accuracy</li>
+        <li><i class="ion-checkmark"> </i>BTTS plan (up to 89% accuracy)</li>
+        <li><i class="ion-checkmark"> </i>1000+ odds (up to 70% accuracy)</li>
+        <li><i class="ion-checkmark"> </i>24/7 Customer Support</li>
+        <li><i class="ion-checkmark"> </i>High odds Betting plans and Strategies</li>
+    </ul>
+    <div class="plan-select"><button type ="button" class="select-plan">Select Plan</button></div>
+  </div>
+</div>
+
+
+ <!-- Modal -->
+ <div class="modal" id="signupModal" role="dialog">
+  <div class="modal-dialog">
+  <div class="modal-content">
+
+<!-- Modal Header -->
+<div class="modal-header">
+<h4 class="modal-title">SIGN UP</h4>
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+</div>
+</br>
+<h3>Please fill in this form to create an account.</h3>
+
+  <!-- Modal body -->
+    <div class="modal-body"  style="padding:40px 50px;">
+    <label for="email"><b>Email</b></label>
+    <input id ="signup-email" type="text" placeholder="Enter Email" name="email" required>
+  
+    <label for="psw"><b>Password</b></label>
+    <input id ="signup-password" type="password" placeholder="Enter Password" name="psw" required>
+  
+    <label>
+    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+  
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+  
+    </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="submit" onclick="signupForm()" class="btn btn-success">Sign Up</button>
+      </div>
+    
+    </div>
+  </div>
+    </div>
+    
+  </div>
+</div>
+ <!-- Modal -->
+ <div class="modal" id="loginModal" role="dialog">
+  <div class="modal-dialog">
+  
+    <!-- Modal content-->
+    <div class="modal-content">
+      
+      <div class="modal-body" style="padding:40px 50px;">
+        <p>LOGIN</p>
+        <hr>
+      
+        <label for="email"><b>Email</b></label>
+        <input id ="login-email" type="text" placeholder="Enter Email" name="email" required>
+      
+        <label for="psw"><b>Password</b></label>
+        <input id ="login-password" type="password" placeholder="Enter Password" name="psw" required>
+      
+
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+        <button type="submit" onclick="loginForm()" class="btn btn-success pull-left">LOGIN</button>
+        <p>Not a member? <a data-toggle="modal" href="#signupModal">Sign Up</a></p>
+        <p> <a href="#" onclick="sendPasswordReset()">Forgot Password?</a></p>
+      </div>
+    </div>
+    
+  </div>
+</div> 
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal paymentModal" role="dialog">
+  <div class="modal-dialog">
+  
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>PAYMENT</p>
+        <hr>
+      
+        <form class="paymentForm">
+
+          <div class="form-group">
+        
+            <label for="email">Email Address</label>
+        
+            <input type="email" id="email-address" required />
+        
+          </div>
+        
+          <div class="form-group">
+        
+            <label for="amount">Amount</label>
+        
+            <input type="tel" id="amount"  required />
+        
+          </div>
+        
+          <div class="form-group">
+        
+            <label for="first-name">First Name</label>
+        
+            <input type="text" id="first-name" />
+        
+          </div>
+        
+          <div class="form-group">
+        
+            <label for="last-name">Last Name</label>
+        
+            <input type="text" id="last-name" />
+        
+          </div>
+        
+          <div class="form-submit">
+        
+            <button type="submit" onclick=pay() > Pay </button>
+        
+          </div>
+        
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+ <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-functions.js"></script>
+
+
+  
+    <script>
+      // TODO: Replace the following with your app's Firebase project configuration
+  var firebaseConfig = {
+  apiKey: "AIzaSyDR4Sj0syPf0U8PJ-1-lsNYYNfPEiZUmSg",
+  authDomain: "betright-8a450.firebaseapp.com",
+  databaseURL: "https://betright-8a450.firebaseio.com",
+  projectId: "betright-8a450",
+  storageBucket: "betright-8a450.appspot.com",
+  messagingSenderId: "439834070769",
+  appId: "1:439834070769:web:4adbd0d42295d9f0e3e350",
+  measurementId: "G-JDKRFZ37X7"
+};
+  
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+      const functions = firebase.functions();
+     
+
+
+    </script>
+    <script src="auth.js"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script> 
+</body>
+</html>
